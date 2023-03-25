@@ -1,5 +1,9 @@
-let a = 45;
-a = 29;
-console.log(a);
+const str = "Привіт";
+const num = 123;
+const flag = true;
+const txt = "true";
 
-
+console.log(typeof str);
+console.log(typeof num);
+console.log(typeof flag);
+console.log(typeof txt);

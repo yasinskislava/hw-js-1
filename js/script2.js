@@ -1,2 +1,10 @@
-const c = "This is just a string";
-console.log(c.length);
+const a = 1;
+const b = "abc";
+const c = 5.97;
+const d = true;
+const e = "Привіт";
+let f;
+let g = false;
+let h = 23;
+let i = 67.24;
+let j = null;
