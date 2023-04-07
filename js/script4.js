@@ -1,4 +1,1 @@
-const myAge = 14;
-const friendAge = 85;
-const sum = myAge + friendAge;
-alert(sum);
+console.log(Math.round(Math.random() * (19-3) + 3));

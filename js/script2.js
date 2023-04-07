@@ -1,10 +1,8 @@
-const a = 1;
-const b = "abc";
-const c = 5.97;
-const d = true;
-const e = "Привіт";
-let f;
-let g = false;
-let h = 23;
-let i = 67.24;
-let j = null;
+let k1 = parseFloat("5px");
+console.log(k1);
+let k2 = parseFloat("12djd334");
+console.log(k2);
+let k3 = parseFloat("12.45asdwe12");
+console.log(k3);
+let k4 = parseFloat("qwqweeewq");
+console.log(k4);

@@ -1,2 +1,1 @@
-const name = prompt("Вкажіть ваше ім'я");
-console.log(name);
+console.log(Math.max(2, 34, 99, 3, 22, 36, 733, 18));
