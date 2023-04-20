@@ -1,4 +1,3 @@
-const SAVED_PASSWORD = "abc";
-const password = prompt("Введіть пароль");
-const isMatch = SAVED_PASSWORD === password;
-console.log(isMatch);
+const userName = "Віктор";
+const payment = 500;
+alert(`Дякуємо,${userName}! До сплати ${payment} гривень`);

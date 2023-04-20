@@ -1,3 +1,5 @@
-const age = prompt("Вкажіть свій вік");
-const passed = age >= 18;
-console.log(passed);
+const a = "My";
+const b = "name";
+const c = "is";
+const fullName = `${a} ${b} ${c} Victor`;
+console.log(fullName);
