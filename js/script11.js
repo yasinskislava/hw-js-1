@@ -1,4 +1,17 @@
-const string = "This is string";
-const length = 7;
-const substring = string.slice(0, length);
-console.log(substring);
+const randomNum = parseInt(Math.random() * (5 - 1) + 1);
+
+if (randomNum === 1) {
+    console.log(randomNum);
+}
+else if (randomNum === 2) {
+    console.log(randomNum);
+}
+else if (randomNum === 3) {
+    console.log(randomNum);
+}
+else if (randomNum === 4) {
+    console.log(randomNum);
+}
+else {
+    console.log(randomNum);
+}

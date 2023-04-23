@@ -1,6 +1,5 @@
-const pricePerDroid = 800;
-const orderedQuantity = 6;
-const deliveryFee = 50;
-const totalPrice = pricePerDroid * orderedQuantity + deliveryFee;
-const message = `You ordered droids worth ${totalPrice} credits. Delivery (${deliveryFee} credits) is included in total price`;
-console.log(message);
+let result;
+const a = 2;
+const b = 3;
+result = a + b < 4 ? 'Нижче' : 'Вище';
+console.log(result);

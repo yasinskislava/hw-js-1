@@ -1,5 +1,10 @@
-const a = "My";
-const b = "name";
-const c = "is";
-const fullName = `${a} ${b} ${c} Victor`;
-console.log(fullName);
+let question = prompt('Яка "офіційна" назва JavaScript?');
+if (typeof question === String) {
+    question = question.toLocaleLowerCase();
+} 
+if (question === "ecmascript") {
+    alert("Правильно!");
+}
+else {
+    alert("Ви не знаєте?ECMAScript!");
+}

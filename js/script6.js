@@ -1,4 +1,7 @@
-let string = "Ваш баланс поповнено на 1";
-string = string.padEnd(string.length+5, "0");
-console.log(string);
-console.log(string.length);
+const num = prompt("Введіть число");
+if (num >= 55 && num <= 99) {
+    console.log("Число потрапляє в діапазон");
+}
+else {
+    console.log("Число не потрапляє в діапазон");
+}
