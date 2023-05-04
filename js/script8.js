@@ -1,8 +1,4 @@
-const firstName = "Вячеслав";
-const lastName = "Ясінський";
-if (firstName.length > 4 && lastName.length > 5) {
-    console.log(firstName.length + lastName.length);
+for (let i = 1; i <= 100; i++){
+    if (i === 49) break;
 }
-else {
-    console.log("ОЙ, неможливо виконати умову");
-}
+console.log("Число знайдено");

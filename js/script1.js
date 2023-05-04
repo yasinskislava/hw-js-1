@@ -1,22 +1,9 @@
-const a = "a";
-console.log(1);
-console.log(a);
-// console.log(b);
-// console.log(c);
-
-if (true) {
-    const b = "b";
-    console.log(2);
-    console.log(a);
-    console.log(b);
-    // console.log(c);
-    
-    if (true) {
-        const c = "c";
-        console.log(3);
-        console.log(a);
-        console.log(b);
-        console.log(c);
-
-    }
+const lang = "ua";
+let ans;
+switch (lang) {
+    case "ua": ans = "Травень"; break;
+    case "en": ans = "May"; break;
+    case "fr": ans = "Peut"; break;
+    default: ans = "Мова обрана некоректно";
 }
+console.log(ans);

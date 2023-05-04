@@ -1,5 +1,4 @@
-let result;
-const a = 2;
-const b = 3;
-result = a + b < 4 ? 'Нижче' : 'Вище';
-console.log(result);
+for (let i = 10; i <= 30; i++){
+    if (i !== 15) console.log(i);
+}
+console.log("Цикл закінчено");

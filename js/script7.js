@@ -1,11 +1,5 @@
-const userAge = 55;
-if (userAge <= 16) {
-    console.log("Дитина");
+let total = 1;
+for (let i = 3; i <= 9; i++){
+    if (i % 2 != 0) total *= i;
 }
-else if (userAge <= 60) {
-    console.log("Дорослий");
-}
-else {
-    console.log("Пенсіонер");
-}
-
+console.log(`Добуток всіх чисел = ${total}`);

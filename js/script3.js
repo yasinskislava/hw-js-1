@@ -1,15 +1,14 @@
-const x1 = 10;
-const x2 = 30;
-const number = 45;
-if (number < x1) {
-    console.log("Це число знаходиться до x1");
+let day = prompt("Який день тижня сьогодні?");
+if (day !== null) day = day.toLocaleLowerCase();
+let ans;
+switch (day) {
+    case "понеділок": 
+    case "вівторок": 
+    case "середа": 
+    case "четверг": 
+    case "п'ятниця": ans = "Робочий"; break;
+    case "субота": 
+    case "неділя": ans = "Вихідний"; break;
+    default: ans = "Назва дня введеня некоректно";
 }
-else if (number > x1) {
-    console.log("Це число знаходиться після x1");
-}
-else if (number >= x1 && number <= x2) {
-    console.log("Це число входить у відрізок між x1 та x2");
-}
-else {
-    console.log("Це число не входить у відрізок між x1 та x2");
-}
+console.log(ans);

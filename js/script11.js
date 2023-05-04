@@ -1,17 +1,13 @@
-const randomNum = parseInt(Math.random() * (5 - 1) + 1);
-
-if (randomNum === 1) {
-    console.log(randomNum);
+for (let i = 1; i <= 5; i++){
+    console.log(i);
 }
-else if (randomNum === 2) {
-    console.log(randomNum);
+let j = 0;
+while (j != 5) {
+    j++;
+    console.log(j);
 }
-else if (randomNum === 3) {
-    console.log(randomNum);
-}
-else if (randomNum === 4) {
-    console.log(randomNum);
-}
-else {
-    console.log(randomNum);
-}
+let k = 0;
+do {
+    k++;
+    console.log(k);
+} while (k != 5);

@@ -1,7 +1,5 @@
-const num = prompt("Введіть число");
-if (num >= 55 && num <= 99) {
-    console.log("Число потрапляє в діапазон");
+let total = 0;
+for (let i = 12; i <= 27; i++){
+    total += i;
 }
-else {
-    console.log("Число не потрапляє в діапазон");
-}
+console.log(`Загальна сума = ${total}`);

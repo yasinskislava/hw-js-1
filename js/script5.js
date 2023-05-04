@@ -1,12 +1,4 @@
-const a = "free";
-if (a === "pro" || a === "vip") {
-    console.log("У вас достатній рівень підписки");
+const num = 7;
+for (let i = 1; i <= 9; i++){
+    console.log(`${num} x ${i} = ${num * i}`);
 }
-else {
-    console.log("У вас не достатній рівень підписки");
-}
-
-
-
-
-
