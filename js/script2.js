@@ -1,5 +1,7 @@
 let a = prompt("Якій напій ви бажаєте придбати?");
-if(a !== null)a = a.toLocaleLowerCase();
+if (a !== null) {
+    a = a.toLocaleLowerCase();
+}
 let answer;
 switch (a) {
     case "чай": answer = "Ціна напою - 20 гривень"; break;

@@ -11,6 +11,8 @@ switch (country) {
     case "ямайка": ans = "Ямайка"; cost = 120; break; 
     default: ans = "У вашій країні доставка недоступна"; c = 1;
 }
-if (c === 0) console.log(`Доставка в ${ans} буде коштувати ${cost} кредитів`);
+if (c === 0) {
+    console.log(`Доставка в ${ans} буде коштувати ${cost} кредитів`);
+}
 else console.log(ans);
 

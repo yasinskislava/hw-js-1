@@ -1,5 +1,7 @@
 let day = prompt("Який день тижня сьогодні?");
-if (day !== null) day = day.toLocaleLowerCase();
+if (day !== null) {
+    day = day.toLocaleLowerCase();
+} 
 let ans;
 switch (day) {
     case "понеділок": 
