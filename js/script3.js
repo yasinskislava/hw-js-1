@@ -1,16 +1,7 @@
-let day = prompt("Який день тижня сьогодні?");
-if (day !== null) {
-    day = day.toLocaleLowerCase();
-} 
-let ans;
-switch (day) {
-    case "понеділок": 
-    case "вівторок": 
-    case "середа": 
-    case "четверг": 
-    case "п'ятниця": ans = "Робочий"; break;
-    case "субота": 
-    case "неділя": ans = "Вихідний"; break;
-    default: ans = "Назва дня введеня некоректно";
-}
-console.log(ans);
+const styles = ["Джаз", "Блюз"];
+styles.push("Рок-н-ролл");
+styles[Math.floor(styles.length / 2)] = "Класика";
+console.log(styles[0]);
+styles.shift();
+styles.unshift("Реп", "Реггі");
+console.log(styles);

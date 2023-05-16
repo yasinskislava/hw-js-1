@@ -1,12 +1,13 @@
-let a = prompt("Якій напій ви бажаєте придбати?");
-if (a !== null) {
-    a = a.toLocaleLowerCase();
+let fruits = ["apple", "lemon", "banana", "pineapple", "mango", "passion fruit"];
+fruits.shift();
+fruits.pop();
+fruits.unshift("pear");
+fruits.push("melon");
+
+fruits.splice(2, 1, "kiwi", "peach");
+
+let str = "";
+for (let i = 0; i < fruits.length; i++){
+    str += fruits[i] + " ";
 }
-let answer;
-switch (a) {
-    case "чай": answer = "Ціна напою - 20 гривень"; break;
-    case "кава": answer = "Ціна напою - 25 гривень"; break;
-    case "сік": answer = "Ціна напою - 15 гривень"; break;
-    default: answer = "Обраного напій відсутній у списку";
-}
-console.log(answer);
+console.log(str);
