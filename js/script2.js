@@ -6,8 +6,5 @@ fruits.push("melon");
 
 fruits.splice(2, 1, "kiwi", "peach");
 
-let str = "";
-for (let i = 0; i < fruits.length; i++){
-    str += fruits[i] + " ";
-}
+const str = fruits.join(" ");
 console.log(str);
