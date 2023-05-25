@@ -5,7 +5,7 @@ for (let i = 4; i <= 6; i++){
 console.log(a);
 
 const b = [1, 2, 3];
-for (let i = 4; i <= 6; i++){
+for (let i = 6; i >= 4; i--){
     b.unshift(i);
 }
 console.log(b);
