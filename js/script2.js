@@ -1,10 +1,12 @@
-let fruits = ["apple", "lemon", "banana", "pineapple", "mango", "passion fruit"];
-fruits.shift();
-fruits.pop();
-fruits.unshift("pear");
-fruits.push("melon");
+const calculateEngravingPrice = function (message, pricePerWord) {
+    const arr = message.split(" ");
+    return arr.length * pricePerWord;
+}
 
-fruits.splice(2, 1, "kiwi", "peach");
+console.log(calculateEngravingPrice('Proin sociis natoque et magnis parturient montes mus', 10)); // 80
 
-const str = fruits.join(" ");
-console.log(str);
+console.log(calculateEngravingPrice('Proin sociis natoque et magnis parturient montes mus', 20)); // 160
+
+console.log(calculateEngravingPrice('Donec orci lectus aliquam est magnis', 40)); // 240
+
+console.log(calculateEngravingPrice('Donec orci lectus aliquam est magnis', 20)); // 120
