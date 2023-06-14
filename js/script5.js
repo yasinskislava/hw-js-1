@@ -1,17 +1,8 @@
-const checkForSpam = function (message) {
-    message = message.toLowerCase();
-    if (message.includes("sale") || message.includes("spam")) {
-        return true;
-    }
-    else {
-        return false;
-    }
+let c = 0;
+function output() {
+    c++;
+    console.log(`You clicked ${c} times`)
 }
 
-console.log(checkForSpam('Latest technology news')); // false
-
-console.log(checkForSpam('JavaScript weekly newsletter')); // false
-
-console.log(checkForSpam('Get best sale offers now!')); // true
-
-console.log(checkForSpam('[SPAM] How to earn fast money?')); // true
+const btn = document.querySelector("[data-page]");
+btn.addEventListener("click", output);

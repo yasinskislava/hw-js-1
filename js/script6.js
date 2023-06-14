@@ -1,17 +1,16 @@
-let input = "";
-const numbers = [];
-while (input !== null) {
-    input = prompt("Введіть число");
-    let check = Number(input);
-    if (input == check) {
-        numbers.push(input);
-    }
-    else if(input !== null) {
-        alert("Було введено не число, попробуйте ще раз");
-    }
+const applyCallbackToEachElement = function (arr, callback) {
+  for (let i = 0; i < arr.length; i++) {
+    arr[i] = callback(arr[i]);
+  }
+  return arr;
 }
-let total = 0;
-for (let i of numbers) {
-    total += Number(i);
-} 
-console.log(`Загальна сума чисел дорівнює ${total}`);
+
+const arr = [1, 2, 3, 4, 5];
+
+const squareCallback = function (a) {
+  return a * a;
+}
+
+const result = applyCallbackToEachElement(arr, squareCallback);
+
+console.log(result); // [1, 4, 9, 16, 25]

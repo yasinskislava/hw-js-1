@@ -1,12 +1,21 @@
-const calculateEngravingPrice = function (message, pricePerWord) {
-    const arr = message.split(" ");
-    return arr.length * pricePerWord;
+function deliverPizza(pizzaName) {
+
+    return `Delivering ${pizzaName} pizza.`;
+
 }
 
-console.log(calculateEngravingPrice('Proin sociis natoque et magnis parturient montes mus', 10)); // 80
+function makePizza(pizzaName) {
+    
+    return `Pizza ${pizzaName} is being prepared, please wait...`;
 
-console.log(calculateEngravingPrice('Proin sociis natoque et magnis parturient montes mus', 20)); // 160
+}
 
-console.log(calculateEngravingPrice('Donec orci lectus aliquam est magnis', 40)); // 240
+// Chande code below this line
 
-console.log(calculateEngravingPrice('Donec orci lectus aliquam est magnis', 20)); // 120
+function makeMessage(pizzaName, callback) {
+
+    return callback(pizzaName);
+
+}
+  
+console.log(makeMessage("Royal Grand", makePizza));

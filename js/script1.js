@@ -1,8 +1,11 @@
-const logItems = function (array) {
-    for (let i = 0; i < array.length; i++){
-        console.log(`${i+1} - ${array[i]}`);
-    }
+function makePizza() {
+
+  return "Your pizza is being prepared, please wait.";
+
 }
 
-logItems(['Mango', 'Poly', 'Ajax', 'Lux', 'Jay', 'Kong']);
-logItems([5, 10, 15, 20, 25, 30, 35, 40, 45, 50]);
+// Change code below this line
+
+const result = makePizza();
+
+const pointer = makePizza;
