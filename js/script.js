@@ -1,13 +1,16 @@
-const myArray = {
-  name: "Mykola",
-  age: 25,
-  city: "Kharkiv",
-  occupation: "waiter",
+// Напишіть функцію, яка отримує об'єкт з ім'ям, прізвищем та віком та
+// використовує деструктуризацію для повернення рядка, що містить інформацію про цю
+// людину в такому форматі: "Мене звати Ім'я Прізвище і мені Вік років".
+
+const person = {
+    name: "Nelli",
+    surname: "Laroy",
+    age: 25,
 }
 
-console.log(myArray);
-
-const test = {
-
+function personInfo(obj) {
+    const { name, surname, age } = obj;
+    return `Мене звати ${name} ${surname} і мені ${age} років`;
 }
-console.log(test);
+
+console.log(personInfo(person));
