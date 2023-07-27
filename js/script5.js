@@ -1,4 +1,4 @@
-// Отримати користувача (не масив) по email (поле email, він унікальний)
+// Отримати масив користувачів, які потрапляють у вікову категорію від min до max років (поле age)
 
 const ex = [
   { name: "Olena", age: 54, eyecolor: "blue", gender: "female", isActive: true, email: "Olena@example.com"},
@@ -7,7 +7,8 @@ const ex = [
   { name: "Artur", age: 12, eyecolor: "blue", gender: "male", isActive: true, email: "Artur@example.com"},
 ];
 
-const email = "Denis@example.com";
+const min = 18;
+const max = 40;
 
-const user = ex.filter(i => i.email === email);
-console.log(user);
+const arr = ex.filter(i => i.age >= min && i.age <= max);
+console.log(arr);

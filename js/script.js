@@ -1,16 +1,11 @@
-// Напишіть функцію, яка отримує об'єкт з ім'ям, прізвищем та віком та
-// використовує деструктуризацію для повернення рядка, що містить інформацію про цю
-// людину в такому форматі: "Мене звати Ім'я Прізвище і мені Вік років".
+//Отримати масив імен всіх користувачів (поле name)
 
-const person = {
-    name: "Nelli",
-    surname: "Laroy",
-    age: 25,
-}
+const ex = [
+    { name: "Oleg", age: 54 },
+    { name: "Max", age: 21 },
+    { name: "Denis", age: 35 },
+    { name: "Artur", age: 12 },
+];
 
-function personInfo(obj) {
-    const { name, surname, age } = obj;
-    return `Мене звати ${name} ${surname} і мені ${age} років`;
-}
-
-console.log(personInfo(person));
+const arr = ex.map(i => i.name);
+console.log(arr);

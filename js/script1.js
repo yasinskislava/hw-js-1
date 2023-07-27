@@ -1,21 +1,11 @@
-// Напишіть функцію, яка приймає об'єкт, що містить інформацію про студента
-// (ім'я, прізвище, оцінки за три предмети) та використовує деструктуризацію
-// для повернення середньої оцінки студента.
+//Отримати масив об'єктів користувачів за кольором очей (поле eyeColor)
 
-const student = {
-    name: "Bruce",
-    surname: "Lee",
-    grades: [4, 5, 3],
-}
+const ex = [
+  { name: "Oleg", age: 54, eyecolor: "blue" },
+  { name: "Max", age: 21, eyecolor: "green" },
+  { name: "Denis", age: 35, eyecolor: "black" },
+  { name: "Artur", age: 12, eyecolor: "blue" },
+];
 
-function calculateAverageGrade(obj) {
-    const { name, surname, grades } = obj;
-    let total = 0;
-    for (const i of grades) {
-        total += i;
-    }
-    const average = total / grades.length;
-    return average;
-}
-
-console.log(calculateAverageGrade(student));
+const arr = ex.filter(i => i.eyecolor === "blue");
+console.log(arr);

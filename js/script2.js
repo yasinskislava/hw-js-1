@@ -1,14 +1,11 @@
-// Напишіть функцію, яка отримує об'єкт зі списком електронних адрес (поле
-// "emails") та використовує деструктуризацію для повернення першої адреси в цьому списку.
+//Отримати масив імен користувачів за статтю (поле gender)
 
-const person = {
-    name: "John",
-    emails: ["john@gmail.com", "john@example.com", "john123@yahoo.com"],
-}
+const ex = [
+  { name: "Olena", age: 54, eyecolor: "blue", gender: "female" },
+  { name: "Maria", age: 21, eyecolor: "green", gender: "female" },
+  { name: "Denis", age: 35, eyecolor: "black", gender: "male" },
+  { name: "Artur", age: 12, eyecolor: "blue", gender: "male" },
+];
 
-function getFirstEmail(obj) {
-    const { name, emails } = obj;
-    return emails[0];
-}
-
-console.log(getFirstEmail(person));
+const arr = ex.filter(i => i.gender === "female");
+console.log(arr);
