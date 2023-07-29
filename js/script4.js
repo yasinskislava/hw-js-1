@@ -9,5 +9,5 @@ const ex = [
 
 const email = "Denis@example.com";
 
-const user = ex.filter(i => i.email === email);
+const user = ex.find(i => i.email === email);
 console.log(user);
