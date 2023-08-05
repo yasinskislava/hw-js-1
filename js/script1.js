@@ -1,11 +1,13 @@
-//Отримати масив об'єктів користувачів за кольором очей (поле eyeColor)
+// Масив імен всіх користувачів у яких є друг із зазначеним ім'ям.
 
-const ex = [
-  { name: "Oleg", age: 54, eyecolor: "blue" },
-  { name: "Max", age: 21, eyecolor: "green" },
-  { name: "Denis", age: 35, eyecolor: "black" },
-  { name: "Artur", age: 12, eyecolor: "blue" },
+const friend = "Anton";
+
+const users = [
+  { name: "Max", friends: ["Oleg", "Denis"] },
+  { name: "Andriy", friends: ["Anton", "Masha"] },
+  { name: "Mykola", friends: ["Olena", "Anton"] }
 ];
 
-const arr = ex.filter(i => i.eyecolor === "blue");
-console.log(arr);
+const ans = users.reduce((arr, {name, friends}) => friends.includes(friend) ? [...arr, name] : [...arr] ,[]);
+console.log(ans);
+

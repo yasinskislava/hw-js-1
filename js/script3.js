@@ -1,11 +1,17 @@
-// Отримати масив тільки неактивних користувачів (поле isActive)
+// Отримати масив всіх умінь всіх користувачів (поле skills), при цьому не має бути повторюваних умінь
+// і вони повинні бути відсортовані в алфавітному порядку.
 
-const ex = [
-  { name: "Olena", age: 54, eyecolor: "blue", gender: "female", isActive: true },
-  { name: "Maria", age: 21, eyecolor: "green", gender: "female", isActive: false},
-  { name: "Denis", age: 35, eyecolor: "black", gender: "male", isActive: true},
-  { name: "Artur", age: 12, eyecolor: "blue", gender: "male", isActive: true},
+const users = [
+  { name: "Max", skills: ["programming", "creativity"] },
+  { name: "Andriy", skills: ["leadership", "creativity"] },
+  { name: "Mykola", skills: ["programming", "communication"] }
 ];
 
-const arr = ex.filter(i => i.isActive);
-console.log(arr);
+const arr = users.reduce((acc, { skills }) => [...acc, ...skills], []).sort();
+const ans = [];
+for (let i = 0; i < arr.length; i++){
+    if (arr[i] !== arr[i + 1]) {
+      ans.push(arr[i]);  
+    }
+}
+console.log(ans);

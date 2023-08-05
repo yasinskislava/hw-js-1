@@ -1,11 +1,11 @@
-//Отримати масив імен всіх користувачів (поле name)
+// Отримати загальну суму балансу (поле balance) всіх користувачів.
 
-const ex = [
-    { name: "Oleg", age: 54 },
-    { name: "Max", age: 21 },
-    { name: "Denis", age: 35 },
-    { name: "Artur", age: 12 },
+const users = [
+    { userId: 1, balance: 200 },
+    { userId: 2, balance: 120 },
+    { userId: 3, balance: 240 },
+    { userId: 4, balance: 360 }
 ];
 
-const arr = ex.map(i => i.name);
-console.log(arr);
+const ans = users.reduce((totalBalance, { balance }) => totalBalance + balance, 0);
+console.log(ans);

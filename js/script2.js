@@ -1,11 +1,9 @@
-//Отримати масив імен користувачів за статтю (поле gender)
+// Масив імен (поле name) людей, відсортованих в залежності від кількості їх друзів (поле friends).
 
-const ex = [
-  { name: "Olena", age: 54, eyecolor: "blue", gender: "female" },
-  { name: "Maria", age: 21, eyecolor: "green", gender: "female" },
-  { name: "Denis", age: 35, eyecolor: "black", gender: "male" },
-  { name: "Artur", age: 12, eyecolor: "blue", gender: "male" },
+const users = [
+    { name: "Max", friends: 4 },
+    { name: "Andriy", friends: 6 },
+    { name: "Mykola", friends: 2 },
 ];
-
-const arr = ex.filter(i => i.gender === "female");
-console.log(arr);
+const ans = users.sort((first, second) => first.friends - second.friends).reduce((acc, {name}) => [...acc, name], []);
+console.log(ans);
