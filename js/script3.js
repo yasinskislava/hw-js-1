@@ -6,12 +6,8 @@ const users = [
   { name: "Andriy", skills: ["leadership", "creativity"] },
   { name: "Mykola", skills: ["programming", "communication"] }
 ];
-
+let previousElement = "";
 const arr = users.reduce((acc, { skills }) => [...acc, ...skills], []).sort();
-const ans = [];
-for (let i = 0; i < arr.length; i++){
-    if (arr[i] !== arr[i + 1]) {
-      ans.push(arr[i]);  
-    }
-}
+const ans = arr.filter((element, index) => arr.indexOf(element) === index);
+
 console.log(ans);
